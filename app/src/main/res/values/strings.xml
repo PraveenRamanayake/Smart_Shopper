@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Smart Shopper</string>
+    <string name="intro_first_line">The Smart Shopping Solution</string>
+    <string name="intro_second_line">Shop is on your hand now!!</string>
+    <string name="btn_login">User Login Here</string>
+    <string name="btn_user_signup">New User? Register Here</string>
+</resources>

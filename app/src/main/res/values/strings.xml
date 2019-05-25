@@ -4,4 +4,8 @@
     <string name="intro_second_line">Shop is on your hand now!!</string>
     <string name="btn_login">User Login Here</string>
     <string name="btn_user_signup">New User? Register Here</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="title_activity_login">LoginActivity</string>
+
 </resources>

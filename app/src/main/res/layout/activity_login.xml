@@ -1,33 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
-    <android.support.design.widget.AppBarLayout
+    tools:context=".LoginActivity"
+    android:background="@drawable/screenbg">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:orientation="vertical"
+        >
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <ImageView
+            android:layout_width="334dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_margin="80sp"
+            android:src="@drawable/shop_logo" />
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="wrap_content"
+            android:text="@string/user_login"
+            android:textSize="22sp"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorRed"
+            android:layout_margin="20sp"
+            android:layout_marginBottom="40sp"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/userEmailWrapper"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userEmail"
+                android:inputType="textEmailAddress"
+                android:hint="@string/enter_email"
+                android:textColor="@color/colorRed"
+                android:textSize="18sp"
+                />
 
-    </android.support.design.widget.AppBarLayout>
+        </android.support.design.widget.TextInputLayout>
 
-    <include layout="@layout/content_login" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/userPasswordWrapper">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userPassword"
+                android:inputType="textPassword"
+                android:hint="@string/enter_password"
+                android:textColor="@color/colorRed"
+                android:textSize="18sp"
+                />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        </android.support.design.widget.TextInputLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="@string/user_login"
+            android:background="@drawable/btnloginbg"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

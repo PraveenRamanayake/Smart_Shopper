@@ -8,5 +8,14 @@
     <string name="enter_password">Enter password</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="user_login">User Login</string>
+    <string name="registration_message">new user registration</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="contact_number">Contact number</string>
+    <string name="btn_register">Register</string>
+
 
 </resources>
